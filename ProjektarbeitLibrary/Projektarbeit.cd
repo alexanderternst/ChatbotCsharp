@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ProjektarbeitLibrary.Message">
+    <Position X="4" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAA=</HashCode>
+      <FileName>Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjektarbeitLibrary.BotEngine">
+    <Position X="3.75" Y="1.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BotEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProjektarbeitLibrary.StorageFile">
+    <Position X="7.75" Y="1.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AABAgIAAAAAAAQAAAAAAAAABAAAEAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>StorageFile.cs</FileName>
+      <NewMemberFileName>StorageFIle.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjektarbeitLibrary.StorageSQL">
+    <Position X="13.25" Y="1.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AABAgIAABAAAAQAAAAAAAAABAAQEAAAAAAAAAQAAABA=</HashCode>
+      <FileName>StorageSQL.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjektarbeitLibrary.Storage">
+    <Position X="7.25" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAgIAAAAQAAAEAAAABAAABAAAEAQAAAAAAQgABhAA=</HashCode>
+      <FileName>Storage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_storage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ProjektarbeitLibrary.StorageREST">
+    <Position X="18.25" Y="1.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AABAgIAAAAAAAQAAAIAAAAABAAAEAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>StorageREST.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ProjektarbeitLibrary.IStorage">
+    <Position X="13.75" Y="5.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AABAgIAAAAAAAQAAAAAAAAABAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IStorage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ProjektarbeitLibrary.httpVerb">
+    <Position X="18.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAEAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StorageREST.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

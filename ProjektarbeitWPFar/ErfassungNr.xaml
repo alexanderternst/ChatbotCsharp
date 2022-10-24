@@ -1,0 +1,149 @@
+﻿<Window x:Class="ProjektarbeitWPFar.ErfassungNr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektarbeitWPFar"
+        mc:Ignorable="d"
+        Title="Modifizierung" 
+        Height="400" 
+        Width="400"
+        WindowStartupLocation="CenterScreen"
+        Icon="Ressources/chatbot.ico">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="55"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="1"
+            HorizontalAlignment="Center" 
+            TextWrapping="Wrap" 
+            Text="Schlüsselwort" 
+            VerticalAlignment="Center" 
+            Width="200" 
+            Height="30"
+            TextAlignment="Center"/>
+
+        <TextBox x:Name="tbKeyword"
+            Grid.Column="1" 
+            Grid.Row="0" 
+            HorizontalAlignment="Center"
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Center" 
+            Width="200" 
+            Height="30"
+            VerticalContentAlignment="Center"
+            IsReadOnly="True"/>
+
+        <TextBlock
+            Grid.Column="1"  
+            Grid.Row="3" 
+            HorizontalAlignment="Center" 
+            TextWrapping="Wrap" 
+            Text="Antwort" 
+            VerticalAlignment="Center"
+            Width="200" 
+            Height="30"
+            TextAlignment="Center" Background="White"/>
+
+        <TextBox x:Name="tbAntwort"
+            Grid.Column="1" 
+            Grid.Row="2" 
+            HorizontalAlignment="Center" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Center" 
+            Width="200" 
+            Height="30"
+            VerticalContentAlignment="Center"
+            IsReadOnly="True"/>
+
+        <TextBlock x:Name="tblNum"
+            Grid.Column="1"  
+            Grid.Row="5" 
+            HorizontalAlignment="Center" 
+            TextWrapping="Wrap"
+            Text="Anzuzeigende Reihe" 
+            VerticalAlignment="Center"
+            Width="200" 
+            Height="30"
+            TextAlignment="Center"     
+            FontWeight="Bold"/>
+
+        <TextBox x:Name="tbNummer"
+            Grid.Column="1" 
+            Grid.Row="4" 
+            HorizontalAlignment="Center" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Center" 
+            Width="100" 
+            Height="30"
+            VerticalContentAlignment="Center"/>
+
+        <Button x:Name="btnSend"
+            Visibility="Hidden"
+            Grid.Column="1" 
+            Grid.Row="7" 
+            HorizontalAlignment="Center" 
+            Content="Erfassen" 
+            VerticalAlignment="Center" 
+            Width="200" 
+            Height="30" 
+            Click="btnSend_Click"
+            Background="#FF9195FF"/>
+
+        <ComboBox x:Name="cbSprache"
+            Grid.Column="1" 
+            HorizontalAlignment="Center" 
+            Grid.Row="6" 
+            VerticalAlignment="Center" 
+            Width="200"
+            Height="30"
+            VerticalContentAlignment="Center">
+            <ComboBoxItem IsSelected="True">Sprachauswahl</ComboBoxItem>
+            <ComboBoxItem x:Name="DE">Deutsch</ComboBoxItem>
+            <ComboBoxItem x:Name="EN">Englisch</ComboBoxItem>
+        </ComboBox>
+
+        <Button x:Name="btnRead"
+            Visibility="Visible"
+            Grid.Column="1" 
+            Grid.Row="7" 
+            HorizontalAlignment="Center" 
+            Content="Lesen" 
+            VerticalAlignment="Center" 
+            Width="200" 
+            Height="30" 
+            IsDefault="True"
+            Click="btnRead_Click"
+            Background="#FF9195FF"/>
+
+        <Button x:Name="btnExit"
+            Visibility="Visible"
+            Grid.Column="1" 
+            Grid.Row="8" 
+            HorizontalAlignment="Center" 
+            Content="Exit" 
+            VerticalAlignment="Center" 
+            Width="200" 
+            Height="30" Click="btnExit_Click" Background="#FFFF9C9C" />
+    </Grid>
+</Window>

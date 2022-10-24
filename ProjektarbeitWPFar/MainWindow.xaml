@@ -1,0 +1,87 @@
+﻿<Window x:Class="ProjektarbeitWPFar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektarbeitWPFar"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="Chatbot" 
+        Height="450" 
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        Icon="Ressources\chatbot.ico">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Menu Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0">
+            <MenuItem Header="_Optionen">
+                <MenuItem Header="_Erfassung" Click="btnNew_Click"/>
+                <MenuItem Header="_Modifizierung" Click="btnRead_Click"/>
+                <MenuItem Header="_Config" Click="btnConfig_Click"/>
+                <MenuItem Header="_About" Click="btnAbout_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <Button x:Name="Senden"
+                Content="Senden" 
+                Margin="5,0,5,0" 
+                Grid.Row="3" 
+                Grid.Column="1"
+                VerticalAlignment="Center" 
+                Height="50"
+                Click="btnSenden_Click"
+                IsDefault="True"
+        />
+
+        <TextBox x:Name="tbEingabeFenster" 
+                 Grid.Column="1" 
+                 Grid.Row="2"
+                 Margin="5,0,5,0"
+                 VerticalAlignment="Center"
+                 TextWrapping="Wrap"
+                 Height="50"
+                 FontSize="16"
+                 VerticalContentAlignment="Center"
+        />
+
+        <TextBox x:Name="tbAusgabeFenster" 
+                   Grid.Column="1"
+                   Margin="5,5,5,5" 
+                   Grid.Row="1" 
+                   VerticalScrollBarVisibility="Auto"
+                   TextWrapping="Wrap" 
+                   FontSize="16"
+                   IsReadOnly="True"
+                   
+                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                   ScrollViewer.VerticalScrollBarVisibility="Auto"
+                   ScrollViewer.CanContentScroll="True"
+        />
+
+
+        <Button x:Name="btnClose" 
+                Content="Exit" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Height="50"
+                Width="100"
+                Grid.Column="2"
+                Grid.Row="3"  
+                Click="btnClose_Click"
+        />
+
+    </Grid>
+</Window>
